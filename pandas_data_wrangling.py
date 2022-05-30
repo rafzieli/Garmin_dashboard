@@ -13,7 +13,7 @@ path, dirs, files = next(os.walk("./data/"))
 file_count = len(files)
 
 #create a list of names from files
-names_list = [name[:-4] for name in files]
+names_list = [name[:-4] for name in sorted(files)]
 
 
 
